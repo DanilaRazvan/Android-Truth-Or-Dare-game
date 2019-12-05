@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dialogLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/playerImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/a1" />
+
+
+    <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/playerImage"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    <include
+            layout="@layout/images_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/nameEditText"
+            android:layout_alignStart="@+id/playerImage"
+            android:layout_alignEnd="@+id/nameEditText"
+            android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
